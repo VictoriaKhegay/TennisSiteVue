@@ -35,14 +35,31 @@ export default class DefinitionsView extends Vue {}
   font-size: 14px;
 }
 ul {
-  list-style-type: square;
-}
-li {
-  padding-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  li {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    &::before {
+      display: block;
+      content: "";
+      width: 15px;
+      height: 3px;
+      background-color: #8d86c9;
+      position: absolute;
+      left: 0;
+      top: 7px;
+    }
+  }
 }
 img {
   padding-top: 30px;
-  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 h3 {
   font-size: 18px;

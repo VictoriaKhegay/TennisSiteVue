@@ -55,7 +55,32 @@
             Tempor sit nulla ac lorem placerat congue. Nulla purus vestibulum
             suscipit pellentesque risus non.
           </p>
-          <div class="about-board__details"></div>
+          <div class="about-board__details">
+            <div class="counter-item">
+              <div>
+                <h2>7</h2>
+              </div>
+              <div>
+                <h3>Летних грунтовых кортов</h3>
+              </div>
+            </div>
+            <div class="counter-item">
+              <div>
+                <h2>4</h2>
+              </div>
+              <div>
+                <h3>Летних грунтовых кортов</h3>
+              </div>
+            </div>
+            <div class="counter-item">
+              <div>
+                <h2>3</h2>
+              </div>
+              <div>
+                <h3>Зимних корта с покрытием «hard»</h3>
+              </div>
+            </div>
+          </div>
         </BoardBlockComponent>
       </ContainerComponent>
     </section>
@@ -191,5 +216,26 @@ export default class AboutView extends Vue {
 .about-title {
   font-size: 36px;
   padding-bottom: 60px;
+}
+
+.about-board__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 60.8px;
+}
+.counter-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  h2 {
+    color: #8d86c9;
+    font-size: 70px;
+    padding-right: 18px;
+  }
+  h3 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
 </style>

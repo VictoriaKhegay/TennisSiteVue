@@ -47,11 +47,11 @@
         </SliderListComponent>
       </container-component>
     </section>
-    <!-- <section class="accordeon-slider">
+    <section>
       <container-component>
-        <PriceSliderComponent />
+        <PriceServiceComponent />
       </container-component>
-    </section> -->
+    </section>
   </div>
 </template>
 
@@ -62,8 +62,7 @@ import ServiceBlockComponent from "@/components/ServiceBlock.vue";
 import AboutBlockComponent from "@/components/AboutBlock.vue";
 import SportClubComponent from "@/components/SportClub.vue";
 import SliderListComponent from "@/components/slider/SliderList.vue";
-import PriceSliderComponent from "@/components/Prise/PriceSliderMain.vue";
-import SliderServicesComponent from "@/components/Prise/SliderServises.vue";
+import PriceServiceComponent from "@/components/PriceService/PriceService.vue";
 
 import { IServiceBlock } from "@/types/ServiceBlock";
 import { ContainerType } from "@/components/Container.vue";
@@ -75,8 +74,7 @@ import { ContainerType } from "@/components/Container.vue";
     AboutBlockComponent,
     SportClubComponent,
     SliderListComponent,
-    PriceSliderComponent,
-    SliderServicesComponent,
+    PriceServiceComponent,
   },
 })
 export default class HomeView extends Vue {
@@ -189,6 +187,41 @@ export default class HomeView extends Vue {
       description: "Quis ullamcorper pretium lacus risus tellus dolor etiam.",
     },
   ];
+  buttons = [
+    {
+      buttonTitle: "Зимний сезон 2021-2022",
+      buttonImg: "@/assets/img/arrow-prise.svg",
+    },
+    {
+      buttonTitle: "Абонементы",
+      buttonImg: "@/assets/img/arrow-prise.svg",
+    },
+    {
+      buttonTitle: "Скидки",
+      buttonImg: "@/assets/img/arrow-prise.svg",
+    },
+    {
+      buttonTitle: "Дополнительные услуги",
+      buttonImg: "@/assets/img/arrow-prise.svg",
+    },
+  ];
+  ServicesPhotos = [
+    {
+      backgroundImageUrl: require("@/assets/img/cafe.jpg"),
+      routeUrl: "/",
+      routeTitle: "Уютное кафе",
+    },
+    {
+      backgroundImageUrl: require("@/assets/img/cafe.jpg"),
+      routeUrl: "/",
+      routeTitle: "ПП меню",
+    },
+    {
+      backgroundImageUrl: require("@/assets/img/cafe.jpg"),
+      routeUrl: "/",
+      routeTitle: "Круглосуточно",
+    },
+  ];
 }
 </script>
 
@@ -234,6 +267,26 @@ export default class HomeView extends Vue {
     line-height: 140%;
     text-align: center;
     color: #333333;
+  }
+}
+.about-slide-item {
+  border: 1px solid #f7ece1;
+  min-width: 100%;
+  width: 1296px;
+  height: 500px;
+  position: relative;
+  background-size: 1256px 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  a {
+    position: absolute;
+    left: 70px;
+    bottom: 65px;
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 140%;
   }
 }
 </style>

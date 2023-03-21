@@ -34,4 +34,13 @@ export default class AboutRuleComponent extends Vue {}
 div {
   padding-bottom: 30px;
 }
+
+.rule {
+  a {
+    color: #333333;
+    &.router-link-exact-active.router-link-active {
+      color: #8d86c9;
+    }
+  }
+}
 </style>

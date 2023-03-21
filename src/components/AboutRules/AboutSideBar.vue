@@ -21,7 +21,7 @@ export default class AboutSideBarComponent extends Vue {}
 </script>
 
 <style scoped lang="scss">
-.bout-sidebar {
+.about-sidebar {
   font-size: 21px;
   text-decoration-color: #333333;
 }

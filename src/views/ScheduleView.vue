@@ -73,32 +73,32 @@ h3 {
   font-size: 18px;
   padding-bottom: 25px;
 }
-li {
-  padding-bottom: 40px;
-  // background-color: #8d86c9;
-  // width: 15px;
-  // height: 3px;
-  // list-style: none;
-  // position: relative;
-  // margin: auto;
+ul {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  li {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    &::before {
+      display: block;
+      content: "";
+      width: 15px;
+      height: 3px;
+      background-color: #8d86c9;
+      position: absolute;
+      left: 0;
+      top: 7px;
+    }
+  }
 }
-// li:before {
-//   content: "";
-//   position: absolute;
-//   width: 15px;
-//   height: 3px;
-
-//   background-color: #8d86c9;
-//   padding-right: 15px;
-// }
 p {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 div {
   padding-bottom: 20px;
-}
-ul {
-  list-style-type: square;
 }
 </style>

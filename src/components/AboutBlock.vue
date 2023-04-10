@@ -1,5 +1,5 @@
 <template>
-  <div class="about-block" :style="{ backgroundImage: 'url(' + bgImage + ')' }">
+  <div class="about-block" :style="{ backgroundImage: 'url('bgImage')' }">
     <h3 class="about-block__title">
       {{ title }}
     </h3>
